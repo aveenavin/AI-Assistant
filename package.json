@@ -1,0 +1,24 @@
+{
+  "name": "my-app",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "concurrently": "^10.0.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.8",
+    "prettier": "^3.8.4"
+  },
+  "scripts": {
+    "dev": "bun run index.ts",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
