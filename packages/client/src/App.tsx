@@ -37,16 +37,19 @@ function App() {
       setIsLoading(true)
 
       try {
-         const response = await fetch('/api/chat', {
-            method: 'POST',
-            headers: {
-               'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-               prompt: trimmedInput,
-               conversationId,
-            }),
-         })
+         const response = await fetch(
+            'https://ai-assistant-vrf3.onrender.com/api/chat',
+            {
+               method: 'POST',
+               headers: {
+                  'Content-Type': 'application/json',
+               },
+               body: JSON.stringify({
+                  prompt: trimmedInput,
+                  conversationId,
+               }),
+            }
+         )
 
          const data = await response.json()
 
