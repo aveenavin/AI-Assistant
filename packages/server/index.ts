@@ -5,6 +5,7 @@ import { ConversationRepository } from './repositories/conversation.repository'
 import { ChatService } from './services/chat.service'
 import { ChatController } from './controllers/chat.controller'
 import { createRoutes } from './routes'
+import cors from 'cors'
 
 dotenv.config()
 
@@ -16,8 +17,8 @@ const model = genAI.getGenerativeModel({
       maxOutputTokens: 100,
    },
 })
-
 const app = express()
+app.use(cors())
 app.use(express.json())
 
 const PORT = process.env.PORT || 3000
