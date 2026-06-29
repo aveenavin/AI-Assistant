@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "bun run index.ts",
     "format": "prettier --write .",
-    "prepare": "husky"
+    "prepare": "husky install"
   },
   "peerDependencies": {
     "typescript": "^5"
