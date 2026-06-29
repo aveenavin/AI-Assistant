@@ -165,13 +165,6 @@ bun run dev
 ![Chat Conversation](./packages/client/src/images/chat-conversation.jpg)
 
 
-## Future Improvements
-- Replace hardcoded client backend URL with environment configuration
-- Add persisted conversation storage for history and recovery
-- Add automated tests for backend and frontend flows
-- Add CI/CD and linting pipeline
-- Add project license and contribution guidelines
-
 ## Acknowledgements
 - Google Gemini generative AI for backend model integration
 - Bun for modern runtime and monorepo workspace support
