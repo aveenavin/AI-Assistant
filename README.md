@@ -8,8 +8,8 @@
 A full-stack TypeScript monorepo with a React/Vite/Tailwind frontend and a Bun/Express backend. The application sends prompt text to Google Gemini and returns assistant responses in a conversational UI.
 
 ## Live Demo
-- **Frontend demo:**[ Try the AI Assistant](`https://ai-assistant-client-omega.vercel.app/`)
-- **Backend API:**[ View API](`https://ai-assistant-vrf3.onrender.com/api/chat`)
+- **Frontend demo:** [ Try the AI Assistant] (`https://ai-assistant-client-omega.vercel.app/`)
+- **Backend API:** [ View API] (`https://ai-assistant-vrf3.onrender.com/api/chat`)
 
 ## Overview
 This repository contains a modern chat assistant that connects a styled web client to a generative AI backend. It demonstrates frontend/backend separation, session-aware chat state, API validation, and external AI service integration.
